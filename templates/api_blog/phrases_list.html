@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    {% for post in object_list %}
+        <li>Title: <a href="{% url 'single' post.pk %}">{{ post.title}}</a></li>
+        <li>Content: {{ post.content }}</li>
+        <br/>
+    {% endfor %}
+</ul>
+</body>
+</html>

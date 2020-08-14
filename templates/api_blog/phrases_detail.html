@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>id -> {{ object.id }}</li>
+    <li>title -> {{ object.title }}</li>
+    <li>content -> {{ object.content }}</li>
+    <li>user id -> {{ object.user_id }}</li>
+    <li><a href="{% url 'edit_phrase' object.id %}">edir</a>  <a href="{% url 'delete_phrase' object.id %}">Delete</a></li>
+</ul>
+</body>
+</html>
