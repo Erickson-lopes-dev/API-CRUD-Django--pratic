@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import viewsets
+from api_blog.models import Phrases
+from api_blog.serializers import PhrasesSerializer
 
-# Create your views here.
+
+class PhrasesViewSets(viewsets.ModelViewSet):
+    serializer_class = PhrasesSerializer
+    queryset = Phrases.objects.all()
