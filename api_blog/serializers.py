@@ -5,4 +5,4 @@ from rest_framework import serializers
 class PhrasesSerializer(serializers.ModelSerializer):
     class Meta:
         model = Phrases
-        fields = ['pk', 'title', 'content', 'user_id', 'created']
+        fields = ['id', 'title', 'content', 'user_id', 'created']
